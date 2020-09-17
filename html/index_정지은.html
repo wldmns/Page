@@ -1,0 +1,87 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title>*pltopia*</title>
+    <style>
+        div.logo {
+            display: block;
+            
+            position : absolute;
+            top: 20%;
+            left: 40%;
+        }
+        .character {
+            position : absolute;
+            top : 75%; left : 30%;
+        }
+        div.bg {
+            margin: 0%;
+
+        }
+        div.form {
+            display: block;
+            position: absolute;
+            top: 68%;
+            left: 27%;
+            width: 850px;
+            height : 300px;
+            border-radius: 20px;
+            background-color: ghostwhite;
+        }
+        div.button {
+            display:inline-block;
+            position: absolute;
+            top: 0%;
+            left: 0%;
+            background-color: black;
+            color: ghostwhite;
+            text-align: center;
+            width:50px;
+            height:30px;
+            border-radius: 5px;
+        }
+    </style>
+</head>
+<body onload="document.getElementById('name').focus();">
+    <script>
+        function fakelogin() {
+            alert(" 로그인 버튼이 아닙니다. 다른 버튼을 찾으세요. ");
+        }
+        function login() {
+            var n = document.getElementById("name").value; 
+            alert(n + " 님 즐거운 시간 되세요!");
+            location.href = "./main.html";
+        }
+    </script>
+    <div class="logo"><img src="../img/logo.png" /></div>
+    <div class="bg"><img src="../img/logo_background.png" /></div>
+    <hr />
+    <div class="form"></div>
+    <form class="character">
+       
+            <input type="radio" name="c" value="1" checked /><img src="../img/1.png" style="width:80px; height:80px;" />
+       
+            <input type="radio" name="c" value="2" /><img src="../img/2.png" style="width:80px; height:80px;" />
+       
+            <input type="radio" name="c" value="3" /><img src="../img/3.png" style="width:80px; height:80px;" /><br />
+      
+            <input type="radio" name="c" value="4" /><img src="../img/4.png" style="width:80px; height:80px;" />
+       
+            <input type="radio" name="c" value="5" /><img src="../img/5.png" style="width:80px; height:80px;" />
+       
+        
+            <input type="radio" name="c" value="6" /><img src="../img/6.png" style="width:80px; height:80px;" />
+       
+
+        &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; name : <input type="text" value="" id="name" />
+        <input type="submit" value="LOGIN" onclick="fakelogin()" />
+    </form>
+    <div class="button" onclick="login()">
+        login
+    </div>
+    <footer>
+        <a href="info.html" target="main_page">웹페이지 소개</a>
+    </footer>
+</body>
+</html>

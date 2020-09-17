@@ -1,0 +1,137 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <script>
+        function a (){ }
+    </script>
+    <style>
+        body {
+            text-align: center;
+            background-color: white;
+            font-size: 60px;
+            color: #267569;
+        }
+    </style>
+</head>
+<body >
+    <script>
+        function name1() {
+            var dd = document.getElementById("dd").value;
+            var mm = parseInt(document.getElementById("mm").value);
+            var d; var m;
+            switch (dd) {
+                case "월":
+                    d = "의욕없는";
+                    break;
+                case "화":
+                    d = "무난한";
+                    break;
+                case "수":
+                    d = "생기있는";
+                    break;
+                case "목":
+                    d = "소름돋는";
+                    break;
+                case "금":
+                    d = "불타는";
+                    break;
+                case "토":
+                    d = "집이 그리운";
+                    break;
+                case "일":
+                    d = "행복한";
+                    break;
+                default:
+                    alert("잘못 입력하셨습니다.");
+            }
+            switch (mm) {
+                case 1:
+                    m = "호랑말코";
+                    break;
+                case 2:
+                    m = "개나리";
+                    break;
+                case 3:
+                    m = "삼겹살";
+                    break;
+                case 4:
+                    m = "복숭아";
+                    break;
+                case 5:
+                    m = "환자";
+                    break;
+                case 6:
+                    m = "고양이";
+                    break;
+                case 7:
+                    m = "외계인";
+                    break;
+                case 8:
+                    m = "휴지";
+                    break;
+                case 9:
+                    m = "알파고";
+                    break;
+                case 10: 
+                    m = "성격";
+                    break;
+                case 11:
+                    m = "신";
+                    break;
+                case 12:
+                    m = "무언가";
+                    break;
+
+                default:
+                    alert("잘못 입력하셨습니다.");
+            }
+            document.write("당신의 pltopia식 이름은 " + d +" "+ m + " 입니다.");
+        }
+            
+    </script>
+    <header>
+        <h3>pltopia식 이름짓기</h3><hr />
+    </header>
+    <fieldset style="">
+        태어난 달을 입력하세요 <input type="text" id="mm" list="month"/>&nbsp;월
+        <datalist id="month">
+            <option value="1">
+            <option value="2">
+            <option value="3">
+            <option value="4">
+            <option value="5">
+            <option value="6">
+            <option value="7">
+            <option value="8">
+            <option value="9">
+            <option value="10">
+
+            <option value="11">
+            <option value="12">
+
+        </datalist>
+        <br />
+        태어난 요일을 입력하세요 <input type="text" id="dd" list="day" />
+        <datalist id="day">
+            <option value="월">
+            <option value="화">
+            <option value="수">
+            <option value="목">
+            <option value="금">
+            <option value="토">
+            <option value="일">
+        </datalist>
+        <input type="submit" value="이름짓기!" onclick="name1()"/>
+    </fieldset>
+    <hr />
+    <footer>
+        <p>
+            pltopia식 이름짓기는
+            재미로 보세요.
+
+        </p>
+    </footer>
+</body>
+</html>

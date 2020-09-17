@@ -1,0 +1,62 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title></title>
+    <style>
+        body {
+            background-color: #FFC566;
+        }
+        div.star {
+            opacity: 0;
+            animation-duration:1s;
+            animation-name: color;
+        }
+
+        @keyframes color {
+            0% {
+                opacity: 0;
+            }
+            25% {
+            opacity:0.5;
+            }
+            50% {
+                opacity: 1;
+            }
+            75% {
+                opacity: 0.5;
+            }
+            100% {
+                opacity: 0;
+            }
+        }
+    </style>
+        </head >
+<body onload="document.getElementById('solution1').focus();">
+    <script>
+        function cnt() {
+            var ns = parseInt(document.getElementById("solution1").value);
+            if (ns == 7) {
+                alert("정답입니다!");
+                document.write("<a href=\"star3.html\">다음 페이지로</a>");
+            }
+            else {
+                alert("땡")
+            }
+            }
+    </script>
+    <div class="star" style="position:absolute; top:1%;left:5%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:10%;left:85%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:61%;left:54%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:31%;left:35%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:18%;left:115%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:21%;left:95%;"><img src="../img/star.png" /></div>
+    <div class="star" style="position:absolute; top:70%;left:5%;"><img src="../img/star.png" /></div>
+    <form style="position:absolute; top:10%;left:45%;">
+        몇&nbsp;개&nbsp;인가요?&nbsp;&nbsp;
+        <input type="text" id="solution1" />&nbsp;
+        <input type="submit" value="제출" onclick="cnt()" />
+    </form>
+</body>
+        </html >

@@ -1,0 +1,103 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>수학문제</title>
+</head>
+<body>
+    <script>
+        alert("간단한 수식 퀴즈입니다.");
+        alert("빈칸에 들어갈 숫자는 1~9 중 하나입니다(중복X)");
+        alert("연산 순서는 사칙연산을 따르지 않습니다(곱하기 우선X) ex) 5+2*3=21");
+        var flag = 0;
+        function check() {
+            
+            var s = parseInt(document.getElementById("solution").value); 
+            if (s == 794586) {
+                alert("정답입니다!");
+            }
+            else {
+                alert("틀렸습니다!"); flag += 1;
+                if (flag == 3) {
+                    alert("아홉번째 칸은 값이 1입니다.");
+                }
+            }
+        }
+    </script>
+    
+    
+        <table border="1" style="text-align:center; height:550px; font-size:40px; position:absolute; left:30%;">
+            <tr>
+                <th style="width:100px; background-color:lightcyan">A</th>
+                <th style="width:50px">*</th>
+                <th style="width:100px"></th>
+                <th style="width:50px">-</th>
+                <th style="width:100px; background-color:lightcyan">B</th>
+                <th style="width:50px">=</th>
+                <th style="width:100px">12</th>
+            </tr>
+            <tr>
+                <th style="width:100px">-</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">+</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">+</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px; background-color:black"></th>
+            </tr>
+            <tr>
+                <th style="width:100px"></th>
+                <th style="width:50px">*</th>
+                <th style="width:100px; background-color:lightcyan">C</th>
+                <th style="width:50px">+</th>
+                <th style="width:100px; background-color:lightcyan">D</th>
+                <th style="width:50px">=</th>
+                <th style="width:100px">13</th>
+            </tr>
+            <tr>
+                <th style="width:100px">+</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">+</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">-</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px; background-color:black"></th>
+            </tr>
+            <tr>
+                <th style="width:100px; background-color:lightcyan">E</th>
+                <th style="width:50px">+</th>
+                <th style="width:100px; background-color:lightcyan">F</th>
+                <th style="width:50px">*</th>
+                <th style="width:100px"></th>
+                <th style="width:50px">=</th>
+                <th style="width:100px">14</th>
+            </tr>
+            <tr>
+                <th style="width:100px">=</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">=</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">=</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px; background-color:black"></th>
+            </tr>
+            <tr>
+                <th style="width:100px">13</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">13</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px">13</th>
+                <th style="width:50px; background-color:black"></th>
+                <th style="width:100px; background-color:black"></th>
+            </tr>
+    </table>
+
+        <fieldset style="width:250px; position:absolute; top: 600px; left:35%">
+            <legend>ABCDEF를 공백 없이 입력하세요.</legend>
+            <input type="text" id="solution" />
+            <input type="submit" value="제출" onclick="check()"/>
+        </fieldset>
+    
+</body>
+</html>
